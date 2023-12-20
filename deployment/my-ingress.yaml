@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-go-app-ingress
+spec:
+  rules:
+    - host: goapp.demixapps.com
+      http:
+        paths:
+          - path: /goapp
+            pathType: Prefix
+            backend:
+              service:
+                name: my-go-app-service
+                port:
+                  number: 80
