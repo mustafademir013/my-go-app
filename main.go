@@ -10,7 +10,7 @@ func main() {
 
 	// Define a route
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello, Mustafa Demir!")
+		return c.SendString("Hello, World!")
 	})
 
 	err := app.Listen(":8080")
