@@ -4,7 +4,7 @@ metadata:
   name: my-go-app-ingress
 spec:
   rules:
-    - host: goapp.demixapps.com
+    - host: example.com
       http:
         paths:
           - path: /goapp
